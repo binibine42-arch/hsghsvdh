@@ -1,0 +1,230 @@
+{
+  "adminPassword": "1234",
+  "profile": {
+    "name": "Biniyam",
+    "nameAm": "ቢንያም",
+    "studentTitleEn": "Graphic Design Student & Visual Artist",
+    "studentTitleAm": "የግራፊክስ ዲዛይን ተማሪ እና ቪዥዋል አርቲስት",
+    "avatarUrl": "/src/assets/images/biniyam_profile_portrait_1794170345274.jpg",
+    "bioEn": "Passionate graphic design student focused on visual communication, Swiss typographic grids, brand identity systems, editorial publications, and poster arts. Dedicated to clean visual harmony, balanced hierarchy, and purposeful cultural storytelling.",
+    "bioAm": "በትኩረት በቪዥዋል ኮሙዩኒኬሽን፣ በስዊስ የፊደላት አቀማመጥ (ታይፖግራፊ)፣ በብራንድ መለያ ንድፍ፣ በመጽሔትና ኤዲቶሪያል ጽሑፎች እንዲሁም በፖስተር አርት ላይ የተሰማራሁ የግራፊክስ ዲዛይን ተማሪ ነኝ። ንጹህ ውበትን እና ትርጉም ያለው ባህላዊ ታሪክን በስራዎቼ ለማንፀባረቅ እሰራለሁ።",
+    "schoolEn": "School of Visual Arts & Graphic Communication",
+    "schoolAm": "የቪዥዋል አርት እና ግራፊክስ ኮሙኒኬሽን ትምህርት ቤት",
+    "yearOfStudyEn": "Third Year Student (Undergraduate)",
+    "yearOfStudyAm": "የ3ኛ ዓመት ተማሪ (የመጀመሪያ ዲግሪ)",
+    "locationEn": "Addis Ababa, Ethiopia",
+    "locationAm": "አዲስ አበባ፣ ኢትዮጵያ",
+    "email": "binitilahun635@gmail.com",
+    "phone": "+251 91 234 5678",
+    "focusAreasEn": [
+      "Poster & Print Design",
+      "Visual Identity & Logo Marks",
+      "Editorial & Typography Systems",
+      "Packaging & Label Architecture",
+      "Vector Illustration & Ge'ez Art"
+    ],
+    "focusAreasAm": [
+      "የፖስተር እና የህትመት ዲዛይን",
+      "የብራንድ መለያ እና የሎጎ ዲዛይን",
+      "የኤዲቶሪያል እና የፊደላት አቀማመጥ",
+      "የማሸጊያ እና የሌብል ዲዛይን",
+      "የቬክተር ስዕል እና የግዕዝ አርት"
+    ],
+    "tools": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign",
+      "Figma",
+      "CorelDraw"
+    ]
+  },
+  "socials": {
+    "telegramUsername": "binitilahun635",
+    "tiktokUsername": "binitilahun"
+  },
+  "projects": [
+    {
+      "id": "proj-1",
+      "titleEn": "Graphic Design Exhibition 2024 (Swiss Grid)",
+      "titleAm": "የግራፊክ ዲዛይን ኤግዚቢሽን 2024 (ስዊስ ግሪድ)",
+      "category": "posters",
+      "categoryEn": "Posters & Print",
+      "categoryAm": "ፖስተር እና ህትመት",
+      "descriptionEn": "A rigorous exploration of geometric Bauhaus composition and Swiss international typographic style. Created for a student academic exhibition with asymmetric visual rhythm.",
+      "descriptionAm": "የባውሃውስ ጂኦሜትሪክ ቅንብር እና የስዊስ ዓለም አቀፍ የፊደል አቀማመጥ ስልት ጥልቅ ጥናት። ለተማሪዎች አካዳሚክ ኤግዚቢሽን የተዘጋጀ።",
+      "imageUrl": "/src/assets/images/design_poster_swiss_1794170346029.jpg",
+      "tools": [
+        "Adobe Illustrator",
+        "Adobe InDesign"
+      ],
+      "year": "2024",
+      "featured": true,
+      "clientOrContextEn": "Academic Exhibition Project",
+      "clientOrContextAm": "የትምህርት ኤግዚቢሽን ፕሮጀክት",
+      "colorPalette": [
+        "#E11D48",
+        "#0F172A",
+        "#F8FAFC",
+        "#E2E8F0"
+      ]
+    },
+    {
+      "id": "proj-2",
+      "titleEn": "Aura Modern Interiors - Complete Brand Identity",
+      "titleAm": "አውራ ዘመናዊ የቤት ውስጥ ዲዛይን - ሙሉ የብራንድ መለያ",
+      "category": "branding",
+      "categoryEn": "Branding & Identity",
+      "categoryAm": "ብራንዲንግ እና መለያ",
+      "descriptionEn": "Full brand identity manual for a modern minimalist interior studio. Features bespoke monogram logo, typography hierarchy, stationery mockup, and tactile color palette.",
+      "descriptionAm": "ለዘመናዊ የቤት ውስጥ ዲዛይን ስቱዲዮ የተሰራ የተሟላ የብራንድ ማንዋል፤ ብጁ ሞኖግራም ሎጎ፣ የፊደላት ቅደም ተከተል እና ማራኪ የቀለም ቅንብርን ያካተተ።",
+      "imageUrl": "/src/assets/images/design_brand_identity_1794170346240.jpg",
+      "tools": [
+        "Adobe Illustrator",
+        "Adobe Photoshop"
+      ],
+      "year": "2024",
+      "featured": true,
+      "clientOrContextEn": "Brand Identity Design Brief",
+      "clientOrContextAm": "የብራንድ መለያ ዲዛይን ፕሮጀክት",
+      "colorPalette": [
+        "#2C3E50",
+        "#BDBFC1",
+        "#F2EDEB",
+        "#C37C67"
+      ]
+    },
+    {
+      "id": "proj-3",
+      "titleEn": "Cultural Vibrations - Modern Heritage & Ge'ez Typography",
+      "titleAm": "የባህል ንዝረት - ዘመናዊ ቅርስ እና የግዕዝ ፊደላት አርት",
+      "category": "typography",
+      "categoryEn": "Typography & Culture",
+      "categoryAm": "ታይፖግራፊ እና ባህል",
+      "descriptionEn": "Cultural screen-print poster celebrating Ethiopian heritage through stylized Ge'ez script, traditional instruments, and rich warm earth-tone vector geometries.",
+      "descriptionAm": "የኢትዮጵያን ባህል በዘመናዊ የግዕዝ ፊደላት፣ ባህላዊ የሙዚቃ መሳሪያዎች እና ሞቅ ባሉ የተፈጥሮ ቀለማት ቬክተር ስዕል የሚያሳይ ፖስተር።",
+      "imageUrl": "/src/assets/images/design_cultural_poster_1794170346348.jpg",
+      "tools": [
+        "Adobe Illustrator",
+        "Vector Art"
+      ],
+      "year": "2024",
+      "featured": true,
+      "clientOrContextEn": "Cultural Festival Poster Series",
+      "clientOrContextAm": "የባህል ፌስቲቫል ፖስተር ተከታታይ",
+      "colorPalette": [
+        "#C2410C",
+        "#1E1B4B",
+        "#F59E0B",
+        "#FDF4DC"
+      ]
+    },
+    {
+      "id": "proj-4",
+      "titleEn": "Artistic Form in Digital Age - Editorial Book Spread",
+      "titleAm": "ስነ-ጥበባዊ ቅርጽ በዲጂታል ዘመን - የኤዲቶሪያል መጽሐፍ ገጽ",
+      "category": "editorial",
+      "categoryEn": "Editorial & Layout",
+      "categoryAm": "ኤዲቶሪያል እና አቀማመጥ",
+      "descriptionEn": "Double-page monograph layout exploring structural grid discipline, asymmetric margins, and typographic pairing between high-contrast display serif and geometric grotesque.",
+      "descriptionAm": "የመጽሐፍ ሁለት ገጽ ኤዲቶሪያል ቅንብር፤ የተዋቀረ የግሪድ ስርዓት፣ ያልተመጣጠኑ ጠርዞች እና የንፅፅር ፊደላት ውህደት የተተገበረበት።",
+      "imageUrl": "/src/assets/images/design_editorial_layout_1794170360605.jpg",
+      "tools": [
+        "Adobe InDesign",
+        "Typography"
+      ],
+      "year": "2023",
+      "featured": false,
+      "clientOrContextEn": "Publication Design Studio",
+      "clientOrContextAm": "የህትመት ዲዛይን ስቱዲዮ",
+      "colorPalette": [
+        "#0A0A0A",
+        "#71717A",
+        "#D97706",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "proj-5",
+      "titleEn": "Bloom & Grow - Artisan Coffee Packaging",
+      "titleAm": "ብሉም ኤንድ ግሮው - የቡና ማሸጊያ ሌብል ዲዛይን",
+      "category": "packaging",
+      "categoryEn": "Packaging & Labels",
+      "categoryAm": "ማሸጊያ እና ሌብሎች",
+      "descriptionEn": "Geometric modular pattern packaging label for Ethiopian Yirgacheffe specialty coffee. Clean typography badge combined with warm earth-toned modular tiles.",
+      "descriptionAm": "ለኢትዮጵያ ይርጋጨፌ ቡና የተዘጋጀ ጂኦሜትሪክ ማሸጊያ ሌብል፤ ንጹህ የፊደል ባጅ ከተዋቡ ሞዱላር ቅርጾች ጋር ተዋህዶ የቀረበ።",
+      "imageUrl": "/src/assets/images/design_packaging_label_1794170361355.jpg",
+      "tools": [
+        "Adobe Illustrator",
+        "Photoshop"
+      ],
+      "year": "2024",
+      "featured": true,
+      "clientOrContextEn": "Artisan Roast Packaging Concept",
+      "clientOrContextAm": "የልዩ ቡና ማሸጊያ ፅንሰ-ሃሳብ",
+      "colorPalette": [
+        "#1E3A3A",
+        "#D97706",
+        "#F3F4F6",
+        "#854D0E"
+      ]
+    }
+  ],
+  "pdfDocuments": [
+    {
+      "id": "pdf-1",
+      "titleEn": "Biniyam Graphic Design CV & Resume 2024",
+      "titleAm": "የቢንያም ግራፊክ ዲዛይን ሲቪ እና ሬዙሜ 2024",
+      "descriptionEn": "Complete student academic background, software proficiencies, coursework projects, and design awards in a clean printable layout.",
+      "descriptionAm": "የተሟላ የተማሪው የትምህርት ዝግጅት፣ የሶፍትዌር ችሎታዎች፣ የተሰሩ ፕሮጀክቶች እና ሽልማቶች በንጹህ የህትመት ቅርጽ።",
+      "tag": "Curriculum Vitae",
+      "tagAm": "ሲቪ እና ሬዙሜ",
+      "fileSize": "1.4 MB",
+      "fileUrl": "",
+      "fileName": "Biniyam_Graphic_Design_CV_2024.pdf",
+      "uploadDate": "Nov 2024",
+      "downloadCount": 142
+    },
+    {
+      "id": "pdf-2",
+      "titleEn": "Aura Modern Living - Brand Identity Guidelines",
+      "titleAm": "አውራ ሞደርን ሊቪንግ - የብራንድ መመሪያ ሰነድ",
+      "descriptionEn": "32-page comprehensive brand identity manual covering logo construction, exclusion zones, typographic scale, and print specifications.",
+      "descriptionAm": "የ32 ገጾች የተሟላ የብራንድ መመሪያ፤ የሎጎ አሰራር፣ የፊደላት መጠን እና የህትመት ዝርዝሮችን የያዘ።",
+      "tag": "Brand Manual",
+      "tagAm": "የብራንድ መመሪያ",
+      "fileSize": "4.8 MB",
+      "fileUrl": "",
+      "fileName": "Aura_Brand_Guidelines_Specimen.pdf",
+      "uploadDate": "Oct 2024",
+      "downloadCount": 98
+    },
+    {
+      "id": "pdf-3",
+      "titleEn": "Modern Ge'ez Typography & Grid Case Study",
+      "titleAm": "ዘመናዊ የግዕዝ ታይፖግራፊ እና ግሪድ ጥናት",
+      "descriptionEn": "Student research paper on adapting traditional Ethiopian Ethiopic letterforms into modern Swiss grid and editorial poster layouts.",
+      "descriptionAm": "የኢትዮጵያ ባህላዊ የግዕዝ ፊደላትን ወደ ዘመናዊ የስዊስ ግሪድ እና ፖስተር ዲዛይን የማዋሃድ የተማሪ ጥናት ሰነድ።",
+      "tag": "Case Study",
+      "tagAm": "የዲዛይን ጥናት",
+      "fileSize": "3.2 MB",
+      "fileUrl": "",
+      "fileName": "Modern_Geez_Typography_CaseStudy.pdf",
+      "uploadDate": "Sep 2024",
+      "downloadCount": 115
+    },
+    {
+      "id": "pdf-4",
+      "titleEn": "Print & Editorial Lookbook Selected Folio",
+      "titleAm": "የህትመት እና ኤዲቶሪያል ሉክቡክ የተመረጡ ስራዎች",
+      "descriptionEn": "Curated collection of Biniyam's posters, book jackets, publication layouts, and vector illustrations with design rationales.",
+      "descriptionAm": "የቢንያም ምርጥ ፖስተሮች፣ የመጽሐፍ ጀርባዎች እና የቬክተር ስዕሎች ስብስብ ከነዲዛይን ማብራሪያቸው።",
+      "tag": "Lookbook",
+      "tagAm": "የስራዎች ሉክቡክ",
+      "fileSize": "8.6 MB",
+      "fileUrl": "",
+      "fileName": "Biniyam_Design_Lookbook_Folio.pdf",
+      "uploadDate": "Nov 2024",
+      "downloadCount": 230
+    }
+  ]
+}

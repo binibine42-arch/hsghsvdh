@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Ethiopic', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+}

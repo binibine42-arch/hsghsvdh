@@ -1,0 +1,6 @@
+{
+  "name": "Biniyam - 2D Graphic Design Student Portfolio",
+  "description": "Portfolio of Biniyam, a graphic design student featuring posters, branding, typography, downloadable PDFs, bilingual English/Amharic support, and double-click admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
