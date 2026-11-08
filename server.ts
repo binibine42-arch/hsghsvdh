@@ -20,8 +20,11 @@ async function startServer() {
     fs.mkdirSync(DATA_DIR, { recursive: true });
   }
 
-  // GET /api/portfolio - delivers the real-time server-persisted data to all visitors
+  // GET /api/portfolio - delivers fresh server-persisted data with zero caching
   app.get('/api/portfolio', (req, res) => {
+    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    res.setHeader('Pragma', 'no-cache');
+    res.setHeader('Expires', '0');
     try {
       if (fs.existsSync(DATA_FILE)) {
         const content = fs.readFileSync(DATA_FILE, 'utf-8');

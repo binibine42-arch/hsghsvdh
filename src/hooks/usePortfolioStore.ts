@@ -2,35 +2,30 @@ import { useState, useEffect, useRef } from 'react';
 import { PortfolioData, Profile, SocialLinks, DesignProject, PdfDocument } from '../types/portfolio';
 import { INITIAL_PORTFOLIO_DATA } from '../data/initialData';
 
-const STORAGE_KEY = 'biniyam_graphic_design_portfolio_v2';
+// Clear out any old legacy browser cache fills
+try {
+  if (typeof window !== 'undefined' && window.localStorage) {
+    localStorage.removeItem('biniyam_2d_portfolio_v1');
+    localStorage.removeItem('biniyam_graphic_design_portfolio_v2');
+  }
+} catch (e) {
+  // Ignore storage exceptions
+}
 
 export function usePortfolioStore() {
-  const [data, setData] = useState<PortfolioData>(() => {
-    try {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored) {
-        const parsed = JSON.parse(stored);
-        return {
-          ...INITIAL_PORTFOLIO_DATA,
-          ...parsed,
-          profile: { ...INITIAL_PORTFOLIO_DATA.profile, ...(parsed.profile || {}) },
-          socials: { ...INITIAL_PORTFOLIO_DATA.socials, ...(parsed.socials || {}) },
-          projects: Array.isArray(parsed.projects) ? parsed.projects : INITIAL_PORTFOLIO_DATA.projects,
-          pdfDocuments: Array.isArray(parsed.pdfDocuments) ? parsed.pdfDocuments : INITIAL_PORTFOLIO_DATA.pdfDocuments,
-          adminPassword: parsed.adminPassword || '1234'
-        };
-      }
-    } catch (e) {
-      console.warn('Failed to parse portfolio data from storage, using initial data:', e);
-    }
-    return INITIAL_PORTFOLIO_DATA;
-  });
-
+  // Always initialize directly from pristine initial data (zero stale cache fills)
+  const [data, setData] = useState<PortfolioData>(INITIAL_PORTFOLIO_DATA);
   const isInitialMount = useRef(true);
 
-  // 1. Fetch server-persisted data on load so all visitors see the latest admin changes
+  // 1. Fetch fresh server-persisted data on load with explicit no-cache
   useEffect(() => {
-    fetch('/api/portfolio')
+    fetch('/api/portfolio', {
+      cache: 'no-store',
+      headers: {
+        'Cache-Control': 'no-cache',
+        'Pragma': 'no-cache'
+      }
+    })
       .then((res) => {
         if (res.ok) return res.json();
         return null;
@@ -49,29 +44,23 @@ export function usePortfolioStore() {
         }
       })
       .catch((err) => {
-        // Fallback to local storage gracefully if server not reachable
-        console.info('Client-side cache active:', err);
+        console.warn('Network fetch error, using default portfolio state:', err);
       });
   }, []);
 
-  // 2. Keep localStorage and Server updated whenever data changes
+  // 2. Synchronize changes directly to the server (no local cache fills)
   useEffect(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-    } catch (e) {
-      console.error('Failed to save portfolio data to local storage:', e);
-    }
-
     if (isInitialMount.current) {
       isInitialMount.current = false;
       return;
     }
 
-    // Push changes directly to the server so every device sees the updates
+    // Direct push to server
     fetch('/api/portfolio', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Cache-Control': 'no-cache'
       },
       body: JSON.stringify(data)
     }).catch((err) => {
@@ -163,16 +152,14 @@ export function usePortfolioStore() {
 
   const resetToDefault = () => {
     setData(INITIAL_PORTFOLIO_DATA);
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(INITIAL_PORTFOLIO_DATA));
-      fetch('/api/portfolio', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(INITIAL_PORTFOLIO_DATA)
-      }).catch(console.error);
-    } catch (e) {
-      console.error(e);
-    }
+    fetch('/api/portfolio', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Cache-Control': 'no-cache'
+      },
+      body: JSON.stringify(INITIAL_PORTFOLIO_DATA)
+    }).catch(console.error);
   };
 
   return {
